@@ -1,0 +1,21 @@
+The most complicated case your HTN planner can solve in 30 seconds
+of real-world time:
+
+given: {"wood": 3, "coal": 2,}
+achieve: {"cart": 2, "rail": 32, "bench": 1, "ingot": 27}
+
+The task is to:
+1. Craft 3 wood into 12 plank
+2. Use 4 planks to create bench (8 planks remain)
+3. Use 4 planks to create 8 sticks (4 planks remain)
+4. Use 3 planks and 2 sticks to create a wooden pickaxe (1 planks and 4 sticks remains)
+5. Mine 3 cobble.
+6. Use remaining 2 sticks and 3 cobble to create stone pickaxe (5 planks remain) 
+7. Mine 59 ore and 6 coal
+8. Smelt ore into ingot
+9. Craft 2 carts (total 10 ingots)
+10.Craft 2 rail (total 12 ingots and 2 stick)
+
+The time cost in recipe time: 797 units
+The time cost in real world: 2.3 seconds, the code cannot do anything more complicated, because it 
+reaches maximum depth beyond this.
